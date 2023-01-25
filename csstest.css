@@ -1,0 +1,64 @@
+/* Add a background image to the body */
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background-image: url("photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Style the header and navigation menu */
+header {
+  background-color: rgba(63, 81, 181, 0.8); /* Semi-transparent blue */
+  color: white;
+  padding: 1em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-right: 1em;
+}
+
+/* Style the game buttons */
+.game-button {
+  background-color: #b9007c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* Add hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the sections */
+section {
+  padding: 2em;
+}
